@@ -5,7 +5,7 @@ import logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 #Init bot
-updater = Updater(token='TOKEN')
+updater = Updater(token=os.getenv('TOKEN'))
 dispatcher = updater.dispatcher
 
 def start(bot, update):
